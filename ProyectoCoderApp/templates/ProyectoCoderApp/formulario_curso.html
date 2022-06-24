@@ -6,7 +6,10 @@ Crear Curso - App Coder
 {% endblock %}
 
 {% block contenidoPagina %}
-<h2>Crea un Curso Nuevo:</h2>
+<p></p>
+<span class="badge bg-primary"><h2><i>Crear Curso:</i></h2></span>
+<p></p>
+
 <form action="" method="post">
     {% csrf_token %}
 
@@ -14,8 +17,7 @@ Crear Curso - App Coder
     <p>Comision: <input type="number" name="comision" id="" min="0"> </p> -->
 
     {{ form.as_p }}
-
-    <input type="submit" value="Crear Curso">
+    <input class="btn btn-primary" type="submit" value="Crear Curso">
 </form>
 
 {% endblock %}

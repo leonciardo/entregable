@@ -6,7 +6,11 @@ Buscar Curso - App Coder
 {% endblock %}
 
 {% block contenidoPagina %}
-<p>Buscar comision:
+
+<p></p>
+<p></p>
+<span class="badge bg-primary"><h2><i>Buscar Curso:</i></h2></span>
+    <p></p>
     <form action="" method="post">
         {% csrf_token %}
 
@@ -16,12 +20,13 @@ Buscar Curso - App Coder
         <input type="submit" value="Buscar">
     </form>
 </p>
-
-<p>Resultados: </p>
+<p></p>
+<p></p>
+<span class="badge bg-primary rounded-pill">RESULTADOS:</span>
+<p></p>
 <ul>
     {% for resultado in comisiones %}
         <li>{{resultado.nombre}} [{{ resultado.comision }}]</li>
     {% endfor %}
 </ul>
-
 {% endblock %}

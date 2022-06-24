@@ -6,7 +6,10 @@ Agregar profesor - App Coder
 {% endblock %}
 
 {% block contenidoPagina %}
-<h2>Agrega un profesor Nuevo:</h2>
+<p></P>
+    <p></P>
+    <span class="badge bg-primary"><h2><i>Agregar Profesor:</i></h2></span>
+    <p></P>
 <form action="" method="post">
     {% csrf_token %}
 
@@ -15,6 +18,6 @@ Agregar profesor - App Coder
 
     {{ form.as_p }}
 
-    <input type="submit" value="Agregar Profesor">
+    <input class="btn btn-primary" type="submit" value="Agregar Profesor">
 </form>
 {% endblock %}

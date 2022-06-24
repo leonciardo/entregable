@@ -6,15 +6,17 @@ Agregar estudiante - App Coder
 {% endblock %}
 
 {% block contenidoPagina %}
-<h2>Agrega un estudiante Nuevo:</h2>
-<form action="" method="post">
+<p></P>
+<p></P>
+    <span class="badge bg-primary"><h2><i>Agregar Estudiante:</i></h2></span>
+<p></P>
+
     {% csrf_token %}
 
     <!-- <p>Curso: <input type="text" name="nombre" id="" maxlength="30"> </p>
     <p>Comision: <input type="number" name="comision" id="" min="0"> </p> -->
 
     {{ form.as_p }}
-
-    <input type="submit" value="Agregar Estudiante">
+    <input class="btn btn-primary" type="submit" value="Agregar Estudiante">
 </form>
 {% endblock %}
