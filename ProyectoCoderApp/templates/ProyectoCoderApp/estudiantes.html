@@ -1,0 +1,32 @@
+{% extends 'ProyectoCoderApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Estudiantes - App Coder
+{% endblock %}
+
+{% block contenidoPagina %}
+<section class="bg-light py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-3">
+                Los estudiantes son: 
+
+                <ul class="list-group">
+                        {% for estudiante in estudiantes %}
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                {{estudiante.nombre}}
+                                <span class="badge bg-success rounded-pill">{{estudiante.apellido}}</span>
+                            </li>
+                        {% endfor %}
+                    
+                </ul>
+                
+                <a href="{% url 'agregar_estudiante' %}">+ Agregar Nuevo Estudiante</a>
+                <p> <a href="{% url 'buscar_estudiante' %}"> + Buscar estudiante</a> </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

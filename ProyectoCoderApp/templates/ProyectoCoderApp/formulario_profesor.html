@@ -1,0 +1,20 @@
+{% extends 'ProyectoCoderApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Agregar profesor - App Coder
+{% endblock %}
+
+{% block contenidoPagina %}
+<h2>Agrega un profesor Nuevo:</h2>
+<form action="" method="post">
+    {% csrf_token %}
+
+    <!-- <p>Curso: <input type="text" name="nombre" id="" maxlength="30"> </p>
+    <p>Comision: <input type="number" name="comision" id="" min="0"> </p> -->
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Agregar Profesor">
+</form>
+{% endblock %}

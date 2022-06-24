@@ -1,0 +1,26 @@
+{% extends 'ProyectoCoderApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Buscar estudiante - App Coder
+{% endblock %}
+
+{% block contenidoPagina %}
+<p>Buscar estudiante:
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="nombre" id="" min="0">
+
+        <input type="submit" value="Buscar">
+    </form>
+</p>
+
+<p>Resultados: </p>
+<ul>
+    {% for ingreso in estudiantes %}
+        <li>{{ingreso.nombre}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
