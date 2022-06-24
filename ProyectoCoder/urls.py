@@ -20,14 +20,7 @@ from ProyectoCoderApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('crearpython/',crear_curso),
-
-    # URLS de ProyectoCoderApp
+    path('', inicio, name= "inicio"),
     path('coderapp/', include('ProyectoCoderApp.urls')),
 ]
 
-# muchas aplicaciones
-# profes, estud, cursos, entrega
-
-# chat
-# mesajes, canales, fijados

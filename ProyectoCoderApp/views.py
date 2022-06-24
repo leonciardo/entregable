@@ -14,11 +14,7 @@ from .forms import NuevoEstudiante
 
 def inicio(request):
 
-    nombre = "Juan"
-    hoy = datetime.datetime.now()
-    notas = [4,9,7,8,5,10]
-
-    return render(request,"ProyectoCoderApp/index.html",{"mi_nombre":nombre,"dia_hora":hoy,"notas":notas})
+    return render(request,"ProyectoCoderApp/index.html",{})
 
 def crear_curso(request):
     if request.method == "POST":
