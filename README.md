@@ -1,4 +1,4 @@
-- Inicio - /App Coder 
+- Proyecto desafio entregable App Coder 
 - Tenemos 3 clases incorporadas en vistas y un buscador en landing: Cursos, Comisiones, Profesores y Buscar (para busqueda de comisiones).
 - Cada vista posee un vinculo al formulario para creación de elementos de la clase correspondiente.
 - Al agregar un elemento a la clase, se redirecciona a la vista de cada clase mostrando los elementos agregados
