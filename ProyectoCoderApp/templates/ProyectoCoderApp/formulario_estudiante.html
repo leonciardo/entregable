@@ -10,6 +10,8 @@ Agregar estudiante - App Coder
 <p></P>
     <span class="badge bg-primary"><h2><i>Agregar Estudiante:</i></h2></span>
 <p></P>
+    <form action="" method="post">
+    
 
     {% csrf_token %}
 
@@ -18,5 +20,9 @@ Agregar estudiante - App Coder
 
     {{ form.as_p }}
     <input class="btn btn-primary" type="submit" value="Agregar Estudiante">
+
+    {% comment %} <input class="btn btn-primary" type="submit" value="Agregar Estudiante">
+     {% endcomment %}
+
 </form>
 {% endblock %}
